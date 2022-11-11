@@ -1,0 +1,493 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/poppins-v20-latin-regular.woff2") format("woff2"),
+    url("../fonts/poppins-v20-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/poppins-v20-latin-500.woff2") format("woff2"),
+    url("../fonts/poppins-v20-latin-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"),
+    url("../fonts/poppins-v20-latin-600.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/quicksand-v30-latin-regular.woff2") format("woff2"),
+    url("../fonts/quicksand-v30-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/quicksand-v30-latin-500.woff2") format("woff2"),
+    url("../fonts/quicksand-v30-latin-500.woff") format("woff");
+}
+
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "Quicksand" "sans-serif";
+}
+
+ul,
+ol,
+li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header */
+
+.container {
+  font-family: "Poppins";
+  max-width: 1280px;
+  width: 100%;
+  margin: 0% auto;
+  padding: 0 20px;
+}
+
+.header {
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 40px 40px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.header_search_wrapper {
+  display: flex;
+}
+
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.logo_link {
+  margin-right: 39px;
+}
+
+.input_text {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  width: 494px;
+  height: 45px;
+  background: #f3f3f3;
+  border-radius: 8px 0px 0px 8px;
+  border: #f3f3f3;
+}
+
+.header_info_container {
+  margin-right: 39px;
+  border-color: none;
+}
+
+.header_info_text {
+  height: 45px;
+  background: #0064d2;
+  border-radius: 0px 8px 8px 0px;
+  border: #f3f3f3;
+  padding: 10px 15px;
+}
+
+.header_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_item {
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 28px;
+  width: 80px;
+}
+
+.header_item_img {
+  margin-right: 5px;
+}
+
+.header_item_img :last-child {
+  margin-right: 0px;
+}
+
+.header_list_text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #2f294d;
+}
+
+.header_item_price {
+  display: inline-block;
+  font-family: "Quicksand";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #0064d2;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.header_list_wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 3px;
+  width: 46px;
+  height: 36px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.categorie_info {
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+  background: #0064d2;
+  border-radius: 8px;
+  border: #f3f3f3;
+}
+
+.header_categorie :hover {
+  opacity: 0.8;
+}
+
+.header_categorie:active {
+  opacity: 0.5;
+  transition: all 0.3s ease;
+}
+
+.categorie_img {
+  margin-left: 14px;
+}
+
+.categorie_text {
+  width: 178px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+  flex: none;
+  padding: 11px 13px 11px 9px;
+}
+
+.header_img_wrapper {
+  width: 40px;
+  height: 40px;
+  margin-right: 19px;
+}
+
+.header_btn_img {
+  width: 40px;
+  height: 40px;
+  left: 108px;
+  top: 103px;
+  background-color: #e6f0fb;
+  border-radius: 50%;
+}
+
+.header_bottom {
+  display: flex;
+  align-items: center;
+  width: 811px;
+  height: 24px;
+}
+
+.header_bottom_list_color {
+  color: #0064d2;
+}
+
+.header_bottom_container {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 66px;
+}
+
+.header_bottom_list:last-child {
+  margin-left: 38px;
+  color: #0064d2;
+}
+
+/*manin*/
+
+.iphone_wrapper {
+  display: flex;
+  margin-bottom: 23px;
+}
+
+.iphone_left_top {
+  width: 536px;
+  height: 463px;
+  margin-right: 46px;
+  left: 102px;
+  top: 201px;
+  background: #e6f0fb;
+  border-radius: 24px;
+  background-color: #e6f0fb;
+}
+
+.iphone_right_top {
+  display: flex;
+  align-items: center;
+}
+
+.iphone_right_heading {
+  width: 387px;
+  height: 54px;
+  left: 675px;
+  top: 207px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.iphone_right_header_link {
+  background: #c1dbf7;
+  border-radius: 11px;
+}
+
+.iphone_right_header_link_item {
+  width: 86px;
+  height: 30px;
+  justify-content: space-between;
+  margin-top: 5px;
+  margin-left: 33px;
+  margin-bottom: 5px;
+  margin-right: 33px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #0064d2;
+}
+
+.iphone_right_star_list {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.iphone_right_word_item {
+  display: flex;
+  align-items: center;
+}
+
+.iphone_right_person_list {
+  display: flex;
+}
+
+.iphone_right_person_wrapper {
+  display: flex;
+  width: 16px;
+  height: 36px;
+  left: 679px;
+  top: 343px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #2f294d;
+}
+
+.iphone_right_currency {
+  margin-right: 5px;
+  width: 85px;
+  height: 66px;
+  left: 697.06px;
+  top: 336px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 66px;
+}
+
+.iphone_recent_bottom {
+  display: flex;
+}
+
+.iphone_recent_list {
+  display: flex;
+}
+
+.iphone_right_person_img {
+  margin-right: 5px;
+}
+
+.iphone_right_customers_link {
+  width: 498px;
+  height: 24px;
+  left: 832px;
+  top: 568px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0064d2;
+}
+
+.iphone_right_word_item {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.iphone_right_links_wrapper {
+  margin-top: 20px;
+}
+
+.iphone_right_link1 {
+  margin-right: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 71px;
+  padding-left: 71px;
+  background-color: #0f0fe1;
+  color: rgb(241, 241, 245);
+  border-radius: 10px;
+}
+
+.iphone_right_link2 {
+  color: blue;
+  background-color: #e6f0fb;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 66px;
+  padding-left: 66px;
+  border-radius: 10px;
+}
+
+.iphone_right_word_img {
+  margin-right: 10px;
+}
+
+.iphone_right_person_wrapper {
+  display: flex;
+}
+
+.iphone_recent_bottom {
+  display: flex;
+  align-items: center;
+}
+
+.iphone_recent_left_side {
+  border-radius: 50%;
+  background-color: #e6f0fb;
+}
+
+.iphone_recent_right_side {
+  border-radius: 50%;
+  background-color: #e6f0fb;
+}
+
+.iphone_recent_bottom_img {
+  margin-right: 16px;
+}
+
+/*nav*/
+
+.nav_list {
+  display: flex;
+  margin-top: 50px;
+  width: 1444px;
+  height: 72px;
+  left: -2px;
+  top: 863px;
+  background: #a6b5c6;
+}
+
+.nav_item {
+  display: flex;
+  width: 1444px;
+  height: 72px;
+  left: -2px;
+  top: 863px;
+  background: #8bb4e0;
+}
+
+/*center*/
+
+.center_info {
+  display: flex;
+  flex-wrap: wrap;
+  height: 258px;
+  margin-top: 40px;
+  margin-bottom: 74px;
+}
+
+.center_text {
+  width: 912px;
+  height: 231px;
+  margin-left: 72px;
+}
+
+.center_item {
+  width: 250px;
+  height: 258px;
+  background-color: #7cbdee;
+}
